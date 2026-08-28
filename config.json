@@ -1,0 +1,138 @@
+{
+  "name": "OTP NUKLIR v4.0",
+  "version": "4.0",
+  "author": "Profesor Iraq",
+  "engine": "Sonic 1.2",
+  "protocol": "NEXA_BYPAS_OMEGA",
+
+  "attack_settings": {
+    "default_duration": 30,
+    "default_thread": 50,
+    "max_thread": 100,
+    "timeout": 5,
+    "retry_count": 3,
+    "delay_between_requests": 0.02,
+    "rate_limit_delay": 2.0
+  },
+
+  "api_endpoints": {
+    "gojek": [
+      "https://api.gojek.com/v1/customers/otp",
+      "https://api.gojek.com/v2/customers/otp",
+      "https://auth.gojek.com/otp/request"
+    ],
+    "grab": [
+      "https://api.grab.com/v1/auth/otp",
+      "https://api.grab.com/v2/auth/otp",
+      "https://auth.grab.com/otp/request"
+    ],
+    "shopee": [
+      "https://api.shopee.com/v1/auth/otp",
+      "https://api.shopee.com/v2/auth/otp",
+      "https://auth.shopee.com/otp/request"
+    ],
+    "ovo": [
+      "https://api.ovo.id/v1/otp/send",
+      "https://api.ovo.id/v2/otp/send",
+      "https://auth.ovo.id/otp/request"
+    ],
+    "dana": [
+      "https://api.dana.id/v1/auth/otp",
+      "https://api.dana.id/v2/auth/otp",
+      "https://auth.dana.id/otp/request"
+    ],
+    "bca": [
+      "https://api.bca.co.id/v1/otp",
+      "https://api.bca.co.id/v2/otp"
+    ],
+    "mandiri": [
+      "https://api.mandiri.co.id/v1/otp",
+      "https://api.mandiri.co.id/v2/otp"
+    ],
+    "bni": [
+      "https://api.bni.co.id/v1/otp",
+      "https://api.bni.co.id/v2/otp"
+    ],
+    "linkaja": [
+      "https://api.linkaja.com/v1/otp",
+      "https://api.linkaja.com/v2/otp"
+    ],
+    "tokopedia": [
+      "https://api.tokopedia.com/v1/otp/request",
+      "https://api.tokopedia.com/v2/otp/request"
+    ]
+  },
+
+  "proxy_settings": {
+    "enabled": false,
+    "proxy_file": "proxy.txt",
+    "max_proxy": 50,
+    "rotate_interval": 10
+  },
+
+  "logging": {
+    "enabled": true,
+    "log_file": "otp_logs.json",
+    "log_level": "info",
+    "save_results": true,
+    "max_logs": 1000
+  },
+
+  "user_agent_settings": {
+    "enabled": true,
+    "randomize": true,
+    "custom_list": [
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 Version/16.0 Mobile/15E148 Safari/604.1",
+      "Mozilla/5.0 (Linux; Android 13; SM-G998B) AppleWebKit/537.36 Chrome/120.0.0.0 Mobile Safari/537.36",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
+      "Dalvik/2.1.0 (Linux; U; Android 12; SM-A525F Build/SP1A.210812.016)"
+    ]
+  },
+
+  "payload_settings": {
+    "country_code": "ID",
+    "platform": "android",
+    "language": "id_ID",
+    "device_list": ["Samsung", "Xiaomi", "Oppo", "Vivo", "Realme", "Google Pixel"],
+    "network_types": ["4G", "5G", "WiFi"],
+    "operators": ["Telkomsel", "Indosat", "XL", "Smartfren", "Tri"]
+  },
+
+  "display_settings": {
+    "show_banner": true,
+    "show_live_stats": true,
+    "show_provider_detail": true,
+    "color_enabled": true,
+    "theme": "dark"
+  },
+
+  "advanced": {
+    "enable_async": true,
+    "enable_retry": true,
+    "enable_burst_mode": false,
+    "burst_size": 10,
+    "burst_interval": 0.5,
+    "enable_stagger": true,
+    "stagger_min": 0.01,
+    "stagger_max": 0.05,
+    "max_retry_per_request": 3,
+    "backoff_factor": 1.5
+  },
+
+  "notification": {
+    "enabled": false,
+    "telegram_bot_token": "",
+    "telegram_chat_id": "",
+    "discord_webhook": "",
+    "notify_on_start": true,
+    "notify_on_finish": true
+  },
+
+  "safety": {
+    "stop_on_fail_rate": false,
+    "fail_rate_threshold": 0.8,
+    "stop_after": 0,
+    "auto_stop_on_ip_ban": true
+  }
+}
