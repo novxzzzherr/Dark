@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-08-29 06:00:00",
+    "target": "6281234567890",
+    "duration": 30,
+    "thread": 50,
+    "mode": "all",
+    "success": 150,
+    "fail": 20,
+    "total": 170,
+    "elapsed": 30.5,
+    "rate": 5.57,
+    "results": [
+      {
+        "url": "https://api.gojek.com/v1/customers/otp",
+        "provider": "api.gojek.com",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.grab.com/v1/auth/otp",
+        "provider": "api.grab.com",
+        "status": 201,
+        "success": true
+      },
+      {
+        "url": "https://api.shopee.com/v1/auth/otp",
+        "provider": "api.shopee.com",
+        "status": 429,
+        "success": false
+      },
+      {
+        "url": "https://api.ovo.id/v1/otp/send",
+        "provider": "api.ovo.id",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.dana.id/v1/auth/otp",
+        "provider": "api.dana.id",
+        "status": 202,
+        "success": true
+      },
+      {
+        "url": "https://api.bca.co.id/v1/otp",
+        "provider": "api.bca.co.id",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.mandiri.co.id/v1/otp",
+        "provider": "api.mandiri.co.id",
+        "status": 403,
+        "success": false
+      },
+      {
+        "url": "https://api.bni.co.id/v1/otp",
+        "provider": "api.bni.co.id",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.linkaja.com/v1/otp",
+        "provider": "api.linkaja.com",
+        "status": 404,
+        "success": false
+      },
+      {
+        "url": "https://api.tokopedia.com/v1/otp/request",
+        "provider": "api.tokopedia.com",
+        "status": 200,
+        "success": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-08-29 06:05:00",
+    "target": "6289876543210",
+    "duration": 60,
+    "thread": 75,
+    "mode": "gojek",
+    "success": 200,
+    "fail": 30,
+    "total": 230,
+    "elapsed": 60.8,
+    "rate": 3.78,
+    "results": [
+      {
+        "url": "https://api.gojek.com/v1/customers/otp",
+        "provider": "api.gojek.com",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.gojek.com/v2/customers/otp",
+        "provider": "api.gojek.com",
+        "status": 201,
+        "success": true
+      },
+      {
+        "url": "https://auth.gojek.com/otp/request",
+        "provider": "auth.gojek.com",
+        "status": 429,
+        "success": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-08-29 06:10:00",
+    "target": "6285555555555",
+    "duration": 45,
+    "thread": 100,
+    "mode": "all",
+    "success": 500,
+    "fail": 50,
+    "total": 550,
+    "elapsed": 45.2,
+    "rate": 12.17,
+    "results": [
+      {
+        "url": "https://api.gojek.com/v1/customers/otp",
+        "provider": "api.gojek.com",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.grab.com/v1/auth/otp",
+        "provider": "api.grab.com",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.shopee.com/v1/auth/otp",
+        "provider": "api.shopee.com",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.ovo.id/v1/otp/send",
+        "provider": "api.ovo.id",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.dana.id/v1/auth/otp",
+        "provider": "api.dana.id",
+        "status": 202,
+        "success": true
+      },
+      {
+        "url": "https://api.bca.co.id/v1/otp",
+        "provider": "api.bca.co.id",
+        "status": 403,
+        "success": false
+      },
+      {
+        "url": "https://api.mandiri.co.id/v1/otp",
+        "provider": "api.mandiri.co.id",
+        "status": 404,
+        "success": false
+      },
+      {
+        "url": "https://api.bni.co.id/v1/otp",
+        "provider": "api.bni.co.id",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.linkaja.com/v1/otp",
+        "provider": "api.linkaja.com",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.tokopedia.com/v1/otp/request",
+        "provider": "api.tokopedia.com",
+        "status": 429,
+        "success": false
+      },
+      {
+        "url": "https://api.gojek.com/v2/customers/otp",
+        "provider": "api.gojek.com",
+        "status": 200,
+        "success": true
+      },
+      {
+        "url": "https://api.grab.com/v2/auth/otp",
+        "provider": "api.grab.com",
+        "status": 201,
+        "success": true
+      }
+    ]
+  }
+]
